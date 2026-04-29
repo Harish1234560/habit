@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Palette
+   #0F1A2B Deep Navy | #1C2E4A Midnight Blue | #52677D Dusty Blue
+   #BDC4D4 Ivory | #D1CFC9 Buttercream
+*/
+
+@layer base {
+  :root {
+    --background: 213 48% 11%;          /* #0F1A2B Deep Navy */
+    --foreground: 220 19% 79%;          /* #BDC4D4 Ivory */
+
+    --card: 218 45% 20%;                /* #1C2E4A Midnight Blue */
+    --card-foreground: 220 19% 79%;
+
+    --popover: 218 45% 20%;
+    --popover-foreground: 220 19% 79%;
+
+    --primary: 30 8% 81%;               /* #D1CFC9 Buttercream */
+    --primary-foreground: 213 48% 11%;  /* Deep Navy on Buttercream */
+
+    --secondary: 218 45% 20%;           /* Midnight Blue */
+    --secondary-foreground: 220 19% 79%;
+
+    --muted: 218 40% 16%;
+    --muted-foreground: 211 19% 59%;    /* #52677D Dusty Blue */
+
+    --accent: 211 19% 59%;              /* Dusty Blue */
+    --accent-foreground: 213 48% 11%;
+
+    --destructive: 0 65% 60%;
+    --destructive-foreground: 220 19% 95%;
+
+    --border: 211 19% 30%;
+    --input: 218 40% 16%;
+    --ring: 30 8% 81%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 213 48% 9%;
+    --sidebar-foreground: 220 19% 75%;
+    --sidebar-primary: 30 8% 81%;
+    --sidebar-primary-foreground: 213 48% 11%;
+    --sidebar-accent: 218 45% 18%;
+    --sidebar-accent-foreground: 220 19% 79%;
+    --sidebar-border: 211 19% 25%;
+    --sidebar-ring: 30 8% 81%;
+
+    --warning: 30 8% 81%;
+    --warning-foreground: 213 48% 11%;
+    --success: 211 19% 59%;
+    --success-foreground: 213 48% 11%;
+    --info: 220 19% 79%;
+    --info-foreground: 213 48% 11%;
+
+    --chart-1: 30 8% 81%;
+    --chart-2: 211 19% 59%;
+    --chart-3: 220 19% 79%;
+    --chart-4: 218 45% 20%;
+    --chart-5: 213 48% 11%;
+
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-weight: 400;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-weight: 600;
+  }
+
+  .font-body {
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-weight: 400;
+  }
+}
